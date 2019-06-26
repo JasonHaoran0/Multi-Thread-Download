@@ -34,7 +34,7 @@ public class RunDownload implements Runnable {
             if(loadingFile.exists()){
                String start_str= loading.readLine();
 //               Long l3=loading.readLong();
-               if(!StringUtils.isEmpty(start_str)){
+               if(start_str==null){
                     this.startIndex=Integer.valueOf(start_str);
                }
             }
